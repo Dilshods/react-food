@@ -1,0 +1,15 @@
+import React from 'react';
+import MealItem from './MealItem';
+
+const MealList = ({meals}) => {
+    return (
+        <div className='List'>
+            {meals.map(meal => (
+                <MealItem key={meal.idMeal} {...meal} />
+            ))}
+        </div>
+    );
+};
+
+
+export default MealList;
